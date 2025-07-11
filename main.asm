@@ -1,0 +1,10 @@
+MOV R0, 10      ; R0 = 10
+MOV R1, 4       ; R1 = 4
+MOV R2, 3
+CALL 18
+CALL 24
+HLT
+SUB R0, R1
+RET
+SUB R1, R2
+RET
