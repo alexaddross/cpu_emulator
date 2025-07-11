@@ -23,7 +23,6 @@ class SimpleCPU:
     def run(self):
         while self.running:
             opcode = self.memory[self.PC]
-            print(opcode)
             op1 = self.memory[self.PC + 1]
             op2 = self.memory[self.PC + 2]
             self.PC += 3

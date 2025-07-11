@@ -1,6 +1,5 @@
 from core import SimpleCPU
 from assembler import assemble
-from utils import bytecode_splitter
 
 cpu = SimpleCPU()
 
@@ -11,9 +10,6 @@ program_file.close()
 bytecode = assemble(
     program_data
 )
-
-for line in bytecode_splitter(bytecode):
-    print(line)
 
 cpu.load_program(bytecode)
 
