@@ -1,5 +1,6 @@
-from core import SimpleCPU
+from cpu_base.core import SimpleCPU
 from assembler import assemble
+
 
 cpu = SimpleCPU()
 

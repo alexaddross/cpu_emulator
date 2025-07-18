@@ -1,9 +1,9 @@
 class SimpleCPU:
-    def __init__(self, memory_size=256):
-        self.memory = [0] * memory_size
-        self.registers = [0] * 4  # R0-R3
+    def __init__(self, ram_size=256, internal_registers_counc=4):
+        self.memory = [0] * ram_size
+        self.registers = [0] * ram_size
         self.PC = 0
-        self.SP = memory_size  # Stack Pointer (grows down)
+        self.SP = ram_size
         self.running = True
 
         self.OPCODES = {
